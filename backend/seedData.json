@@ -1,0 +1,161 @@
+{
+    "categories": [
+      { "category_name": "Vegan" },
+      { "category_name": "Vegetarian" },
+      { "category_name": "Non-Vegetarian" },
+      { "category_name": "Dessert" },
+      { "category_name": "Fast Food" }
+    ],
+    "cuisines": [
+      { "cuisine_name": "Indian" },
+      { "cuisine_name": "Italian" },
+      { "cuisine_name": "Mexican" },
+      { "cuisine_name": "Japanese" },
+      { "cuisine_name": "American" }
+    ],
+    "recipeTypes": [
+      { "type_name": "Starter" },
+      { "type_name": "Main Course" },
+      { "type_name": "Dessert" },
+      { "type_name": "Beverage" },
+      { "type_name": "Snack" }
+    ],
+    "recipes": [
+      {
+        "recipe_name": "Vegan Tofu Stir Fry",
+        "recipe_steps": "1. Heat oil in a pan. 2. Add tofu and stir fry. 3. Add vegetables and stir fry. 4. Season with soy sauce and serve.",
+        "image": "vegan_tofu_stir_fry.jpg",
+        "preparation_time": 20,
+        "total_calories": 350,
+        "category_id": 1,
+        "cuisine_id": 1,
+        "type_id": 2,
+        "ingredients": [
+          { "ingredient_name": "Tofu", "quantity": "200g", "calories_per_quantity": 150, "ingredient_type": "Protein", "cooking_method": "Stir fry" },
+          { "ingredient_name": "Mixed vegetables", "quantity": "100g", "calories_per_quantity": 50, "ingredient_type": "Vegetable", "cooking_method": "Stir fry" },
+          { "ingredient_name": "Soy sauce", "quantity": "2 tbsp", "calories_per_quantity": 20, "ingredient_type": "Seasoning", "cooking_method": "No cooking" }
+        ]
+      },
+      {
+        "recipe_name": "Vegetarian Pasta",
+        "recipe_steps": "1. Boil pasta. 2. Prepare sauce with tomatoes, garlic, and basil. 3. Mix pasta with sauce and serve.",
+        "image": "vegetarian_pasta.jpg",
+        "preparation_time": 30,
+        "total_calories": 450,
+        "category_id": 2,
+        "cuisine_id": 2,
+        "type_id": 2,
+        "ingredients": [
+          { "ingredient_name": "Pasta", "quantity": "200g", "calories_per_quantity": 250, "ingredient_type": "Carb", "cooking_method": "Boil" },
+          { "ingredient_name": "Tomatoes", "quantity": "2", "calories_per_quantity": 40, "ingredient_type": "Vegetable", "cooking_method": "Cooked" },
+          { "ingredient_name": "Basil", "quantity": "1 tsp", "calories_per_quantity": 1, "ingredient_type": "Herb", "cooking_method": "Cooked" }
+        ]
+      },
+      {
+        "recipe_name": "Chicken Caesar Salad",
+        "recipe_steps": "1. Grill chicken and slice. 2. Toss with lettuce, croutons, and Caesar dressing.",
+        "image": "chicken_caesar_salad.jpg",
+        "preparation_time": 15,
+        "total_calories": 600,
+        "category_id": 3,
+        "cuisine_id": 5,
+        "type_id": 1,
+        "ingredients": [
+          { "ingredient_name": "Chicken breast", "quantity": "150g", "calories_per_quantity": 180, "ingredient_type": "Protein", "cooking_method": "Grill" },
+          { "ingredient_name": "Lettuce", "quantity": "100g", "calories_per_quantity": 15, "ingredient_type": "Vegetable", "cooking_method": "Raw" },
+          { "ingredient_name": "Caesar dressing", "quantity": "2 tbsp", "calories_per_quantity": 80, "ingredient_type": "Dressing", "cooking_method": "No cooking" }
+        ]
+      },
+      {
+        "recipe_name": "Chocolate Cake",
+        "recipe_steps": "1. Mix flour, sugar, and cocoa. 2. Add eggs and bake at 180°C for 25 minutes.",
+        "image": "chocolate_cake.jpg",
+        "preparation_time": 45,
+        "total_calories": 350,
+        "category_id": 4,
+        "cuisine_id": 5,
+        "type_id": 3,
+        "ingredients": [
+          { "ingredient_name": "Flour", "quantity": "200g", "calories_per_quantity": 400, "ingredient_type": "Carb", "cooking_method": "Bake" },
+          { "ingredient_name": "Sugar", "quantity": "150g", "calories_per_quantity": 600, "ingredient_type": "Sweetener", "cooking_method": "Bake" },
+          { "ingredient_name": "Cocoa powder", "quantity": "50g", "calories_per_quantity": 200, "ingredient_type": "Seasoning", "cooking_method": "Bake" }
+        ]
+      },
+      {
+        "recipe_name": "Margherita Pizza",
+        "recipe_steps": "1. Prepare pizza dough. 2. Add tomato sauce, mozzarella, and basil. 3. Bake at 220°C for 15 minutes.",
+        "image": "margherita_pizza.jpg",
+        "preparation_time": 40,
+        "total_calories": 700,
+        "category_id": 5,
+        "cuisine_id": 2,
+        "type_id": 2,
+        "ingredients": [
+          { "ingredient_name": "Pizza dough", "quantity": "1 base", "calories_per_quantity": 500, "ingredient_type": "Carb", "cooking_method": "Bake" },
+          { "ingredient_name": "Mozzarella cheese", "quantity": "100g", "calories_per_quantity": 300, "ingredient_type": "Dairy", "cooking_method": "Bake" },
+          { "ingredient_name": "Tomato sauce", "quantity": "100g", "calories_per_quantity": 50, "ingredient_type": "Sauce", "cooking_method": "No cooking" }
+        ]
+      },
+      {
+        "recipe_name": "Sushi Rolls",
+        "recipe_steps": "1. Cook rice and season with vinegar. 2. Place rice on nori sheet and add fillings. 3. Roll and slice.",
+        "image": "sushi_rolls.jpg",
+        "preparation_time": 30,
+        "total_calories": 250,
+        "category_id": 1,
+        "cuisine_id": 4,
+        "type_id": 2,
+        "ingredients": [
+          { "ingredient_name": "Sushi rice", "quantity": "100g", "calories_per_quantity": 130, "ingredient_type": "Grain", "cooking_method": "Cook" },
+          { "ingredient_name": "Nori sheets", "quantity": "2 sheets", "calories_per_quantity": 20, "ingredient_type": "Seaweed", "cooking_method": "No cooking" },
+          { "ingredient_name": "Cucumber", "quantity": "50g", "calories_per_quantity": 10, "ingredient_type": "Vegetable", "cooking_method": "No cooking" }
+        ]
+      },
+      {
+        "recipe_name": "Guacamole",
+        "recipe_steps": "1. Mash avocado with lime, salt, and garlic. 2. Add diced tomatoes and cilantro.",
+        "image": "guacamole.jpg",
+        "preparation_time": 10,
+        "total_calories": 200,
+        "category_id": 2,
+        "cuisine_id": 3,
+        "type_id": 1,
+        "ingredients": [
+          { "ingredient_name": "Avocado", "quantity": "1", "calories_per_quantity": 160, "ingredient_type": "Fruit", "cooking_method": "Mash" },
+          { "ingredient_name": "Lime", "quantity": "1", "calories_per_quantity": 10, "ingredient_type": "Fruit", "cooking_method": "No cooking" },
+          { "ingredient_name": "Garlic", "quantity": "1 clove", "calories_per_quantity": 5, "ingredient_type": "Spice", "cooking_method": "Mash" }
+        ]
+      },
+      {
+        "recipe_name": "Beef Burger",
+        "recipe_steps": "1. Grill beef patty. 2. Assemble with bun, lettuce, and tomato.",
+        "image": "beef_burger.jpg",
+        "preparation_time": 25,
+        "total_calories": 750,
+        "category_id": 3,
+        "cuisine_id": 5,
+        "type_id": 2,
+        "ingredients": [
+          { "ingredient_name": "Beef patty", "quantity": "200g", "calories_per_quantity": 400, "ingredient_type": "Protein", "cooking_method": "Grill" },
+          { "ingredient_name": "Burger bun", "quantity": "1", "calories_per_quantity": 200, "ingredient_type": "Carb", "cooking_method": "Grill" },
+          { "ingredient_name": "Lettuce", "quantity": "50g", "calories_per_quantity": 10, "ingredient_type": "Vegetable", "cooking_method": "Raw" }
+        ]
+      },
+      {
+        "recipe_name": "Pancakes",
+        "recipe_steps": "1. Mix flour, milk, eggs, and sugar. 2. Cook on a skillet. 3. Serve with syrup.",
+        "image": "pancakes.jpg",
+        "preparation_time": 20,
+        "total_calories": 500,
+        "category_id": 4,
+        "cuisine_id": 5,
+        "type_id": 3,
+        "ingredients": [
+          { "ingredient_name": "Flour", "quantity": "100g", "calories_per_quantity": 400, "ingredient_type": "Carb", "cooking_method": "Cook" },
+          { "ingredient_name": "Milk", "quantity": "100ml", "calories_per_quantity": 50, "ingredient_type": "Dairy", "cooking_method": "Cook" },
+          { "ingredient_name": "Eggs", "quantity": "2", "calories_per_quantity": 140, "ingredient_type": "Protein", "cooking_method": "Cook" }
+        ]
+      }
+    ]
+  }
+  
