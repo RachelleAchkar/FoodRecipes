@@ -1,16 +1,46 @@
 class Recipe {
-  final int id;
+  final int recipeId;
   final String name;
   final String steps;
+  final String image;
+  final int preparationTime;
+  final int totalCalories;
+  final int categoryId;
+  final String categoryName;
+  final int cuisineId;
+  final String cuisineName;
+  final int typeId;
+  final String typeName;
 
-  Recipe({required this.id, required this.name, required this.steps});
+  Recipe({
+    required this.recipeId,
+    required this.name,
+    required this.steps,
+    required this.image,
+    required this.preparationTime,
+    required this.totalCalories,
+    required this.categoryId,
+    required this.categoryName,
+    required this.cuisineId,
+    required this.cuisineName,
+    required this.typeId,
+    required this.typeName,
+  });
 
-  // to convert JSON data to a Recipe object
   factory Recipe.fromJson(Map<String, dynamic> json) {
     return Recipe(
-      id: json['recipe_id'], 
-      name: json['recipe_name'], 
+      recipeId: json['recipe_id'],
+      name: json['recipe_name'],
       steps: json['recipe_steps'],
+      image: json['image'] ?? '',
+      preparationTime: json['preparation_time'] ?? 0,
+      totalCalories: json['total_calories'] ?? 0,
+      categoryId: json['category_id'],
+      categoryName: json['category_name'] ?? '',
+      cuisineId: json['cuisine_id'],
+      cuisineName: json['cuisine_name'] ?? '',
+      typeId: json['type_id'],
+      typeName: json['type_name'] ?? '',
     );
   }
 }
