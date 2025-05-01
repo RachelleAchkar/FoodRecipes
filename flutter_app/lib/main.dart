@@ -1,10 +1,6 @@
-import 'dart:convert';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/filters_page.dart';
 import 'package:flutter_app/pages/recipe_list_page.dart';
-import 'package:http/http.dart' as http;
-import 'models/recipe.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,9 +19,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MainPage(),
-       routes: {
-        '/filters': (context) => const FilterPage(), 
-      },
+      routes: {'/filters': (context) => const FilterPage()},
     );
   }
 }
@@ -52,7 +46,6 @@ class _MainPageState extends State<MainPage> {
       RecipeListPage(onNavigateToFilters: () => _onItemTapped(1)),
       const FilterPage(),
     ];
-
 
     return Scaffold(
       body: _pages[_selectedIndex],

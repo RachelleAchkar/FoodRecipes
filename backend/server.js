@@ -10,7 +10,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'foodrecipes',
-    password: 'admin',
+    password: 'vanessa123',
     port: 5432,
   });
   
@@ -41,6 +41,31 @@ app.get('/api/recipes', async (req, res) => {
 
   res.json(result.rows);
 });
+
+app.get('/api/recipes/:id/ingredients', async (req, res) => {
+  const recipeId = req.params.id;
+
+  try {
+    const result = await pool.query(`
+      SELECT 
+        i.ingredient_id,
+        ri.recipe_id,
+        i.ingredient_name,
+        i.quantity
+      FROM ingredients i
+      JOIN recipe ri ON ri.recipe_id = i.recipe_id
+      WHERE ri.recipe_id = $1
+    `, [recipeId]);
+
+    res.json(result.rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Server Error');
+  }
+});
+
+
+
 
 
 app.listen(3000, '0.0.0.0', () =>  console.log(`Server running on http://localhost:${port}`));
