@@ -164,7 +164,7 @@ class _RecipeListPageState extends State<RecipeListPage> {
                                             : 1, // 3 columns on Web, 1 on Mobile
                                     crossAxisSpacing: 20,
                                     mainAxisSpacing: 20,
-                                    childAspectRatio: kIsWeb ? 3 / 2 : 3 / 2.8,
+                                    childAspectRatio: kIsWeb ? 3 / 2.5 : 3 / 2.8,
                                   ),
                               itemCount: _filteredRecipes.length,
                               itemBuilder: (context, index) {
@@ -196,7 +196,7 @@ class _RecipeListPageState extends State<RecipeListPage> {
   /// Builds each recipe card UI
   Widget _buildRecipeCard(Recipe recipe) {
     return SizedBox(
-      height: kIsWeb ? 400 : 900,
+      height: kIsWeb ? 800 : 900,
       child: AnimatedContainer(
         duration: Duration(milliseconds: 300), // Smooth animation
         curve: Curves.easeInOut,
@@ -217,7 +217,7 @@ class _RecipeListPageState extends State<RecipeListPage> {
           children: [
             // Recipe image
             SizedBox(
-              height: 180,
+              height: 250,
               width: double.infinity,
               child: Image.asset(
                 'assets/images/recipe_${recipe.recipeId}.jpg', // Image file should match this pattern
@@ -250,7 +250,7 @@ class _RecipeListPageState extends State<RecipeListPage> {
                   ),
                   const SizedBox(height: 6),
 
-                  // Preparation time
+                  // Preparation Time
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -263,18 +263,27 @@ class _RecipeListPageState extends State<RecipeListPage> {
                     ],
                   ),
 
-                  // Calories info
+                  // Calories
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.local_fire_department,
-                        size: 18,
-                        color: Colors.redAccent,
-                      ),
+                      Icon(Icons.local_fire_department, size: 18, color: Colors.redAccent),
                       const SizedBox(width: 5),
                       Text(
                         '${recipe.totalCalories} kcal',
+                        style: TextStyle(fontWeight: FontWeight.w600),
+                      ),
+                    ],
+                  ),
+
+                  // Servings
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.people, size: 18, color: Colors.deepOrange.shade400),
+                      const SizedBox(width: 5),
+                      Text(
+                        '${recipe.servings} servings',
                         style: TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ],

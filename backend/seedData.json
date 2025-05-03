@@ -93,7 +93,7 @@
     {
       "recipe_id": 1,
       "recipe_name": "Mediterranean Grilled Chicken Bowl",
-      "recipe_steps": "Begin by marinating the chicken breast in olive oil, lemon juice, minced garlic, and a blend of Mediterranean herbs. Grill the chicken until it's fully cooked and has a nice char. While the chicken is grilling, cook the quinoa until fluffy. Sauté chopped bell peppers, zucchini, and spinach in olive oil until tender. Assemble the bowl by placing a bed of quinoa, topping it with the grilled chicken slices, sautéed vegetables, and a dollop of yogurt. Sprinkle with chopped almonds and a drizzle of olive oil for added flavor.",
+      "recipe_steps": "Begin by marinating the chicken breast in olive oil, lemon juice, minced garlic, and a blend of Mediterranean herbs. Grill the chicken until it's fully cooked and has a nice char. While the chicken is grilling, cook the quinoa until fluffy. Sauté chopped bell peppers, zucchini, and spinach in olive oil until tender. Assemble the bowl by placing a bed of quinoa, topping it with the grilled chicken slices, sautéed vegetables, and a dollop of yogurt. Sprinkle with chopped almonds and a drizzle of olive oil for added flavor",
       "image": "mediterranean_grilled_chicken_bowl.jpg",
       "preparation_time": 45,
       "total_calories": 600,
@@ -105,7 +105,7 @@
     {
       "recipe_id": 2,
       "recipe_name": "Spicy Beef and Vegetable Stir-Fry",
-      "recipe_steps": "Start by slicing the ground beef into thin strips and marinate with soy sauce, minced ginger, and a pinch of black pepper. In a wok, heat vegetable oil and stir-fry chopped onions, carrots, and broccoli until they begin to soften. Add the marinated beef to the wok and cook until browned. Stir in cooked rice and mix thoroughly. Finish by adding a splash of lime juice and garnish with chopped coriander.",
+      "recipe_steps": "Start by slicing the ground beef into thin strips and marinate with soy sauce, minced ginger, and a pinch of black pepper. In a wok, heat vegetable oil and stir-fry chopped onions, carrots, and broccoli until they begin to soften. Add the marinated beef to the wok and cook until browned. Stir in cooked rice and mix thoroughly. Finish by adding a splash of lime juice and garnish with chopped coriander",
       "image": "spicy_beef_vegetable_stirfry.jpg",
       "preparation_time": 30,
       "total_calories": 700,
@@ -117,7 +117,7 @@
     {
       "recipe_id": 3,
       "recipe_name": "Vegan Lentil and Vegetable Stew",
-      "recipe_steps": "In a large pot, sauté chopped onions, garlic, and celery in olive oil until translucent. Add diced carrots, bell peppers, and mushrooms, cooking until they start to soften. Stir in lentils, diced tomatoes, and vegetable broth. Season with cumin, coriander, salt, and black pepper. Let the stew simmer until the lentils are tender. Serve hot, garnished with fresh parsley.",
+      "recipe_steps": "In a large pot, sauté chopped onions, garlic, and celery in olive oil until translucent. Add diced carrots, bell peppers, and mushrooms, cooking until they start to soften. Stir in lentils, diced tomatoes, and vegetable broth. Season with cumin, coriander, salt, and black pepper. Let the stew simmer until the lentils are tender. Serve hot, garnished with fresh parsley",
       "image": "vegan_lentil_vegetable_stew.jpg",
       "preparation_time": 60,
       "total_calories": 500,
@@ -129,7 +129,7 @@
     {
       "recipe_id": 4,
       "recipe_name": "Gluten-Free Quinoa Salad with Tofu",
-      "recipe_steps": "Cook quinoa until fluffy and let it cool. In a pan, sauté cubed tofu until golden brown. In a large bowl, combine the cooked quinoa, sautéed tofu, chopped cucumbers, cherry tomatoes, and spinach. Prepare a dressing by mixing olive oil, lemon juice, salt, and black pepper. Drizzle the dressing over the salad and toss to combine. Serve chilled.",
+      "recipe_steps": "Cook quinoa until fluffy and let it cool. In a pan, sauté cubed tofu until golden brown. In a large bowl, combine the cooked quinoa, sautéed tofu, chopped cucumbers, cherry tomatoes, and spinach. Prepare a dressing by mixing olive oil, lemon juice, salt, and black pepper. Drizzle the dressing over the salad and toss to combine. Serve chilled",
       "image": "glutenfree_quinoa_tofu_salad.jpg",
       "preparation_time": 35,
       "total_calories": 450,
@@ -141,7 +141,7 @@
     {
       "recipe_id": 5,
       "recipe_name": "Keto Salmon with Creamy Spinach",
-      "recipe_steps": "Season salmon fillets with salt and black pepper. In a skillet, heat olive oil and sear the salmon until cooked through. Remove the salmon and in the same skillet, sauté minced garlic until fragrant. Add heavy cream and grated parmesan cheese, stirring until the sauce thickens. Add fresh spinach and cook until wilted. Return the salmon to the skillet, spooning the creamy spinach over the top. Serve hot.",
+      "recipe_steps": "Season salmon fillets with salt and black pepper. In a skillet, heat olive oil and sear the salmon until cooked through. Remove the salmon and in the same skillet, sauté minced garlic until fragrant. Add heavy cream and grated parmesan cheese, stirring until the sauce thickens. Add fresh spinach and cook until wilted. Return the salmon to the skillet, spooning the creamy spinach over the top. Serve hot",
       "image": "keto_salmon_creamy_spinach.jpg",
       "preparation_time": 25,
       "total_calories": 550,
@@ -153,7 +153,7 @@
     {
       "recipe_id": 6,
       "recipe_name": "Spicy Chickpea Tacos with Indian Twist",
-      "recipe_steps": "Soak chickpeas overnight. Cook until tender. In a pan, heat oil, add chopped onions, tomatoes, and green chilies. Add boiled chickpeas, turmeric, red chili powder, coriander powder, and chana masala. Cook until spices blend well. Warm taco shells and fill with the chickpea mixture. Garnish with chopped coriander leaves.",
+      "recipe_steps": "Soak chickpeas overnight. Cook until tender. In a pan, heat oil, add chopped onions, tomatoes, and green chilies. Add boiled chickpeas, turmeric, red chili powder, coriander powder, and chana masala. Cook until spices blend well. Warm taco shells and fill with the chickpea mixture. Garnish with chopped coriander leaves",
       "image": "spicy_chickpea_tacos.jpg",
       "preparation_time": 30,
       "total_calories": 400,
@@ -165,7 +165,7 @@
     {
       "recipe_id": 7,
       "recipe_name": "Grilled Eggplant Parmesan",
-      "recipe_steps": "Slice eggplant and grill until tender. Layer grilled eggplant slices with marinara sauce and mozzarella cheese in a baking dish. Bake until cheese melts. Garnish with fresh basil.",
+      "recipe_steps": "Slice eggplant and grill until tender. Layer grilled eggplant slices with marinara sauce and mozzarella cheese in a baking dish. Bake until cheese melts. Garnish with fresh basil",
       "image": "grilled_eggplant_parmesan.jpg",
       "preparation_time": 45,
       "total_calories": 500,
@@ -177,7 +177,7 @@
     {
       "recipe_id": 8,
       "recipe_name": "Vegan Quinoa and Black Bean Salad",
-      "recipe_steps": "Cook quinoa until fluffy. In a bowl, mix cooked quinoa, black beans, chopped bell peppers, corn, and red onions. Dress with olive oil, lime juice, salt, and pepper. Serve chilled.",
+      "recipe_steps": "Cook quinoa until fluffy. In a bowl, mix cooked quinoa, black beans, chopped bell peppers, corn, and red onions. Dress with olive oil, lime juice, salt, and pepper. Serve chilled",
       "image": "vegan_quinoa_black_bean_salad.jpg",
       "preparation_time": 25,
       "total_calories": 350,
@@ -189,7 +189,7 @@
     {
       "recipe_id": 9,
       "recipe_name": "Keto Zucchini Noodles with Pesto",
-      "recipe_steps": "Spiralize zucchini into noodles. In a pan, sauté zucchini noodles in olive oil for 2 minutes. Toss with homemade pesto sauce. Serve immediately.",
+      "recipe_steps": "Spiralize zucchini into noodles. In a pan, sauté zucchini noodles in olive oil for 2 minutes. Toss with homemade pesto sauce. Serve immediately",
       "image": "keto_zucchini_pesto.jpg",
       "preparation_time": 20,
       "total_calories": 300,
@@ -201,7 +201,7 @@
     {
       "recipe_id": 10,
       "recipe_name": "Gluten-Free Banana Oat Pancakes",
-      "recipe_steps": "Mash bananas in a bowl. Add oats, eggs, and a pinch of cinnamon. Mix well. Heat a non-stick pan and pour batter to form pancakes. Cook until golden brown on both sides. Serve with maple syrup.",
+      "recipe_steps": "Mash bananas in a bowl. Add oats, eggs, and a pinch of cinnamon. Mix well. Heat a non-stick pan and pour batter to form pancakes. Cook until golden brown on both sides. Serve with maple syrup",
       "image": "gluten_free_banana_pancakes.jpg",
       "preparation_time": 30,
       "total_calories": 400,
@@ -213,7 +213,7 @@
     {
       "recipe_id": 11,
       "recipe_name": "French Ratatouille",
-      "recipe_steps": "Slice eggplant, zucchini, bell peppers, and tomatoes. In a pan, sauté onions and garlic in olive oil. Add sliced vegetables, herbs, salt, and pepper. Simmer until vegetables are tender. Serve hot.",
+      "recipe_steps": "Slice eggplant, zucchini, bell peppers, and tomatoes. In a pan, sauté onions and garlic in olive oil. Add sliced vegetables, herbs, salt, and pepper. Simmer until vegetables are tender. Serve hot",
       "image": "french_ratatouille.jpg",
       "preparation_time": 50,
       "total_calories": 250,
@@ -225,7 +225,7 @@
     {
       "recipe_id": 12,
       "recipe_name": "Chinese Steamed Dumplings",
-      "recipe_steps": "Prepare dumpling filling with minced vegetables and tofu. Place filling in dumpling wrappers and seal. Steam dumplings until cooked through. Serve with soy sauce.",
+      "recipe_steps": "Prepare dumpling filling with minced vegetables and tofu. Place filling in dumpling wrappers and seal. Steam dumplings until cooked through. Serve with soy sauce",
       "image": "chinese_steamed_dumplings.jpg",
       "preparation_time": 60,
       "total_calories": 300,
@@ -237,7 +237,7 @@
     {
       "recipe_id": 13,
       "recipe_name": "Mexican Grilled Corn (Elote)",
-      "recipe_steps": "Grill corn on the cob until charred. Spread with mayonnaise, sprinkle with chili powder, grated cheese, and lime juice. Serve hot.",
+      "recipe_steps": "Grill corn on the cob until charred. Spread with mayonnaise, sprinkle with chili powder, grated cheese, and lime juice. Serve hot",
       "image": "mexican_grilled_corn.jpg",
       "preparation_time": 20,
       "total_calories": 200,
@@ -249,7 +249,7 @@
     {
       "recipe_id": 14,
       "recipe_name": "Indian Lentil Soup (Dal)",
-      "recipe_steps": "Cook lentils with turmeric and water until soft. In a pan, heat oil, add cumin seeds, chopped onions, garlic, and tomatoes. Combine with cooked lentils. Simmer and serve hot with rice.",
+      "recipe_steps": "Cook lentils with turmeric and water until soft. In a pan, heat oil, add cumin seeds, chopped onions, garlic, and tomatoes. Combine with cooked lentils. Simmer and serve hot with rice",
       "image": "indian_dal.jpg",
       "preparation_time": 40,
       "total_calories": 350,
@@ -261,7 +261,7 @@
     {
       "recipe_id": 15,
       "recipe_name": "French Crepes with Strawberries",
-      "recipe_steps": "Prepare crepe batter with flour, eggs, milk, and a pinch of salt. Cook thin crepes on a non-stick pan. Fill with sliced strawberries and a drizzle of maple syrup. Fold and serve.",
+      "recipe_steps": "Prepare crepe batter with flour, eggs, milk, and a pinch of salt. Cook thin crepes on a non-stick pan. Fill with sliced strawberries and a drizzle of maple syrup. Fold and serve",
       "image": "french_crepes_strawberries.jpg",
       "preparation_time": 35,
       "total_calories": 400,
@@ -273,7 +273,7 @@
     {
       "recipe_id": 16,
       "recipe_name": "Italian Mushroom Risotto",
-      "recipe_steps": "Sauté chopped onions and garlic in olive oil. Add arborio rice and cook until translucent. Gradually add vegetable broth, stirring continuously. Add sliced mushrooms and cook until rice is creamy. Finish with grated parmesan cheese.",
+      "recipe_steps": "Sauté chopped onions and garlic in olive oil. Add arborio rice and cook until translucent. Gradually add vegetable broth, stirring continuously. Add sliced mushrooms and cook until rice is creamy. Finish with grated parmesan cheese",
       "image": "italian_mushroom_risotto.jpg",
       "preparation_time": 50,
       "total_calories": 550,
@@ -285,7 +285,7 @@
     {
       "recipe_id": 17,
       "recipe_name": "Chinese Fried Rice",
-      "recipe_steps": "Cook rice and let it cool. In a wok, heat vegetable oil, add chopped onions, carrots, peas, and scrambled eggs. Add cooked rice and soy sauce. Stir-fry until well combined. Serve hot.",
+      "recipe_steps": "Cook rice and let it cool. In a wok, heat vegetable oil, add chopped onions, carrots, peas, and scrambled eggs. Add cooked rice and soy sauce. Stir-fry until well combined. Serve hot",
       "image": "chinese_fried_rice.jpg",
       "preparation_time": 30,
       "total_calories": 600,
@@ -297,7 +297,7 @@
     {
       "recipe_id": 18,
       "recipe_name": "Mexican Guacamole",
-      "recipe_steps": "Mash ripe avocados in a bowl. Add chopped onions, tomatoes, cilantro, lime juice, salt, and pepper. Mix well. Serve with tortilla chips.",
+      "recipe_steps": "Mash ripe avocados in a bowl. Add chopped onions, tomatoes, cilantro, lime juice, salt, and pepper. Mix well. Serve with tortilla chips",
       "image": "mexican_guacamole.jpg",
       "preparation_time": 15,
       "total_calories": 250,
@@ -309,7 +309,7 @@
     {
       "recipe_id": 19,
       "recipe_name": "Indian Vegetable Biryani",
-      "recipe_steps": "Cook basmati rice until 70% done. In a pan, sauté onions, ginger, garlic, and mixed vegetables with spices. Layer rice and vegetable mixture in a pot. Cook on low heat until rice is fully cooked. Garnish with fried onions.",
+      "recipe_steps": "Cook basmati rice until 70% done. In a pan, sauté onions, ginger, garlic, and mixed vegetables with spices. Layer rice and vegetable mixture in a pot. Cook on low heat until rice is fully cooked. Garnish with fried onions",
       "image": "indian_vegetable_biryani.jpg",
       "preparation_time": 60,
       "total_calories": 700,
@@ -321,7 +321,7 @@
     {
       "recipe_id": 20,
       "recipe_name": "French Onion Soup",
-      "recipe_steps": "Sauté sliced onions in butter until caramelized. Add beef broth, thyme, salt, and pepper. Simmer for 30 minutes. Serve hot with toasted bread and melted cheese on top.",
+      "recipe_steps": "Sauté sliced onions in butter until caramelized. Add beef broth, thyme, salt, and pepper. Simmer for 30 minutes. Serve hot with toasted bread and melted cheese on top",
       "image": "french_onion_soup.jpg",
       "preparation_time": 45,
       "total_calories": 400,

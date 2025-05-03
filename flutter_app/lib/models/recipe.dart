@@ -5,6 +5,7 @@ class Recipe {
   final String image;
   final int preparationTime;
   final int totalCalories;
+  final int servings;
   final int categoryId;
   final String categoryName;
   final int cuisineId;
@@ -19,6 +20,7 @@ class Recipe {
     required this.image,
     required this.preparationTime,
     required this.totalCalories,
+    required this.servings,
     required this.categoryId,
     required this.categoryName,
     required this.cuisineId,
@@ -35,12 +37,13 @@ class Recipe {
       image: json['image'] ?? '',
       preparationTime: json['preparation_time'] ?? 0,
       totalCalories: json['total_calories'] ?? 0,
+      servings: json['servings'] ?? 0,
       categoryId: json['category_id'],
       categoryName: json['category_name'] ?? '',
       cuisineId: json['cuisine_id'],
       cuisineName: json['cuisine_name'] ?? '',
-      typeId: json['type_id'],
-      typeName: json['type_name'] ?? '',
+      typeId: json['recipe_type_id'],
+      typeName: json['recipe_type_name'] ?? '',
     );
   }
 }

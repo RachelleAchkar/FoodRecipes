@@ -129,7 +129,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
                   'assets/images/recipe_${recipe.recipeId}.jpg',
-                  height: 300,
+                  height: 320,
                   width: MediaQuery.of(context).size.width * 0.5,
                   fit: BoxFit.cover,
                   // Show a fallback if image fails to load
@@ -175,7 +175,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
             ),
             const SizedBox(height: 20),
 
-            // Prep Time and Calories
+            // Prep Time, servings and Calories
             Row(
               mainAxisAlignment:
                   MainAxisAlignment.start, // Align items to the left
@@ -192,6 +192,13 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                   Icons.local_fire_department,
                   '${recipe.totalCalories}',
                   'Cal',
+                ),
+                const SizedBox(width: 20), // Adjust the space between the pills
+                // Servings Pill
+                _buildInfoPill(
+                  Icons.restaurant,
+                  '${recipe.servings}', // Assuming the servings field exists in your Recipe model
+                  'Servings',
                 ),
               ],
             ),

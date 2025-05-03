@@ -148,7 +148,7 @@ async function seedDatabase() {
 
       // Insert each recipe_ingredient entry from the recipe_ingredients array
       const recipeIngredients = seedData.recipe_ingredients.filter(
-        (ri) => ri.recipe_id === recipe_id
+        (ri) => ri.recipe_id === recipeId
       );
 
       // Log cooking_method_id values to check for any issues
