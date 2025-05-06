@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart'; // Detects if running on Web
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/filters_page.dart';
 import 'package:http/http.dart' as http;
 
 import '../models/recipe.dart';
@@ -8,14 +9,18 @@ import 'recipe_detail_page.dart';
 
 /// Main widget displaying the list of recipes
 class RecipeListPage extends StatefulWidget {
-  final VoidCallback
-  onNavigateToFilters; // Callback to navigate to filter screen
-
-  const RecipeListPage({super.key, required this.onNavigateToFilters});
+  final VoidCallback onNavigateToFilters;
+  final Map<String, dynamic> activeFilters;
+  const RecipeListPage({
+    super.key,
+    required this.onNavigateToFilters,
+    required this.activeFilters,
+  });
 
   @override
   State<RecipeListPage> createState() => _RecipeListPageState();
 }
+
 
 // This is the private state class associated with the RecipeListPage widget.
 class _RecipeListPageState extends State<RecipeListPage> {
@@ -25,6 +30,8 @@ class _RecipeListPageState extends State<RecipeListPage> {
 
   List<Recipe> _allRecipes = []; // All recipes fetched from the API
   List<Recipe> _filteredRecipes = []; // Recipes filtered by the search query
+  Map<String, dynamic>? _activeFilters= {};
+  bool _isLoading = true;
 
   @override
   void initState() {
@@ -41,34 +48,87 @@ class _RecipeListPageState extends State<RecipeListPage> {
     super.dispose();
   }
 
+void _openFilterPage() async {
+  final selectedFilters = await Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => FilterPage(currentFilters: _activeFilters),
+    ),
+  );
+
+  if (selectedFilters != null) {
+    setState(() {
+      _activeFilters = selectedFilters;
+    });
+    await fetchRecipes(); // refetch with filters
+  }
+}
+
+void _showRandomRecipe() async {
+  final baseUrl = kIsWeb ? 'http://localhost:3000' : 'http://192.168.1.102:3000';
+
+  try {
+    final response = await http.get(Uri.parse('$baseUrl/api/recipes/random'));
+
+    if (response.statusCode == 200) {
+      final jsonData = json.decode(response.body);
+      final recipe = Recipe.fromJson(jsonData);
+
+      if (!mounted) return;
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => RecipeDetailPage(recipe: recipe),
+        ),
+      );
+    } else {
+      throw Exception('Failed to fetch random recipe');
+    }
+  } catch (e) {
+    print('Error fetching random recipe: $e');
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Could not load random recipe.')),
+    );
+  }
+}
+
+
   /// Fetches recipes from the backend API
   Future<void> fetchRecipes() async {
-    final baseUrl =
-        kIsWeb ? 'http://localhost:3000' : 'http://192.168.1.102:3000';
 
-    try {
-      final response = await http.get(Uri.parse('$baseUrl/api/recipes'));
-      // Check if the HTTP response status code is 200 (OK)
-      if (response.statusCode == 200) {
-        //Decode the response body (JSON string) into a list of dynamic objects
-        List jsonResponse = json.decode(response.body);
-        // Convert the JSON response into a list of Recipe objects
-        List<Recipe> loadedRecipes =
-            jsonResponse.map((recipe) => Recipe.fromJson(recipe)).toList();
+ setState(() {
+    _isLoading = true;
+  });
 
-        // Update the state with the loaded recipes
-        setState(() {
-          _allRecipes = loadedRecipes; // Store the full list of recipes
-          _filteredRecipes =
-              loadedRecipes; // Initialize the filtered list with all recipes (before any search/filtering)
-        });
-      } else {
-        throw Exception('Failed to load recipes');
-      }
-    } catch (e) {
-      print("Error fetching recipes: $e");
+  final baseUrl = kIsWeb ? 'http://localhost:3000' : 'http://192.168.1.102:3000';
+
+  try {
+    final response = await http.post(
+      Uri.parse('$baseUrl/api/recipes/filter'),
+      headers: {'Content-Type': 'application/json'},
+      body: json.encode(_activeFilters), // send filters to backend
+    );
+
+    if (response.statusCode == 200) {
+      List jsonResponse = json.decode(response.body);
+      List<Recipe> loadedRecipes = jsonResponse.map((r) => Recipe.fromJson(r)).toList();
+
+      if (!mounted) return;
+      setState(() {
+        _allRecipes = loadedRecipes;
+        _filteredRecipes = loadedRecipes.isEmpty ? [] : loadedRecipes;
+        _isLoading = false;
+      });
+    } else {
+      throw Exception('Failed to load recipes');
     }
+  } catch (e) {
+    print("Error fetching recipes: $e");
+    _isLoading = false;
+    _allRecipes = [];
+    _filteredRecipes = [];
   }
+}
 
   // Updates the filtered list of recipes as the user types in the search box
   void _onSearchChanged() {
@@ -85,6 +145,7 @@ class _RecipeListPageState extends State<RecipeListPage> {
     });
   }
 
+
   // Build UI for the page
   @override
   Widget build(BuildContext context) {
@@ -99,18 +160,21 @@ class _RecipeListPageState extends State<RecipeListPage> {
         elevation: 4,
         actions: [
           // Shuffle icon
-          IconButton(icon: Icon(Icons.shuffle), onPressed: () {}),
+          IconButton(
+            icon: Icon(Icons.shuffle),
+            onPressed: _showRandomRecipe,
+          ),
           // Filter icon navigates to filter screen
           IconButton(
             icon: Icon(Icons.filter_alt),
-            onPressed: widget.onNavigateToFilters,
+            onPressed:_openFilterPage,
           ),
         ],
       ),
 
       // Main body content
       body:
-          _allRecipes.isEmpty
+              _isLoading
               ? Center(
                 child: CircularProgressIndicator(),
               ) // Show loader while fetching
@@ -153,7 +217,7 @@ class _RecipeListPageState extends State<RecipeListPage> {
                   Expanded(
                     child:
                         _filteredRecipes.isEmpty
-                            ? Center(child: Text('No recipes found.'))
+                            ? Center(child: Text('No recipes matching your filters.'))
                             : GridView.builder(
                               padding: const EdgeInsets.all(10),
                               gridDelegate:
@@ -333,4 +397,5 @@ class _RecipeListPageState extends State<RecipeListPage> {
       ),
     );
   }
+  
 }

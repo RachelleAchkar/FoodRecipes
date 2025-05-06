@@ -11,7 +11,8 @@
     {"cuisine_id": 2,"cuisine_name": "Mexican"},
     {"cuisine_id": 3,"cuisine_name": "Indian"},
     {"cuisine_id": 4,"cuisine_name": "Chinese"},
-    {"cuisine_id": 5,"cuisine_name": "French"}
+    {"cuisine_id": 5,"cuisine_name": "French"},
+    {"cuisine_id": 6,"cuisine_name": "Lebanese"}
   ],
   "recipe_type": [
     {"recipe_type_id": 1,"recipe_type_name": "Vegetarian"},
@@ -329,7 +330,19 @@
       "category_id": 2,
       "cuisine_id": 5,
       "recipe_type_id": 2
-    }
+    },
+    {
+      "recipe_id": 21,
+      "recipe_name": "Rez 3a Djej",
+      "recipe_steps": "Boil chicken with spices until cooked. In a separate pot, cook rice with ghee, cinnamon, and chicken broth. Layer rice and shredded chicken. Garnish with fried nuts.",
+      "image": "rez_3a_djej.jpg",
+      "preparation_time": 60,
+      "total_calories": 650,
+      "servings": 4,
+      "category_id": 2,
+      "cuisine_id": 6,
+      "recipe_type_id": 2
+    }    
   ],
   "recipe_ingredients": [
     {
@@ -337,7 +350,6 @@
       "recipe_id": 1,
       "ingredient_id": 1,
       "quantity": "2 pieces",
-      "calories_per_quantity": 165,
       "ingredient_type_id": 2,
       "cooking_method_id": 2
     },
@@ -346,7 +358,6 @@
       "recipe_id": 1,
       "ingredient_id": 29,
       "quantity": "1 cup",
-      "calories_per_quantity": 222,
       "ingredient_type_id": 4,
       "cooking_method_id": 1
     },
@@ -355,7 +366,6 @@
       "recipe_id": 1,
       "ingredient_id": 21,
       "quantity": "1 cup",
-      "calories_per_quantity": 46,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -364,7 +374,6 @@
       "recipe_id": 1,
       "ingredient_id": 24,
       "quantity": "1 cup",
-      "calories_per_quantity": 20,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -373,7 +382,6 @@
       "recipe_id": 1,
       "ingredient_id": 25,
       "quantity": "1 cup",
-      "calories_per_quantity": 7,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -382,7 +390,6 @@
       "recipe_id": 1,
       "ingredient_id": 10,
       "quantity": "2 tablespoons",
-      "calories_per_quantity": 59,
       "ingredient_type_id": 3,
       "cooking_method_id": 5
     },
@@ -391,7 +398,6 @@
       "recipe_id": 1,
       "ingredient_id": 48,
       "quantity": "2 tablespoons",
-      "calories_per_quantity": 103,
       "ingredient_type_id": 4,
       "cooking_method_id": 5
     },
@@ -400,7 +406,6 @@
       "recipe_id": 2,
       "ingredient_id": 2,
       "quantity": "1 pound",
-      "calories_per_quantity": 800,
       "ingredient_type_id": 2,
       "cooking_method_id": 4
     },
@@ -409,7 +414,6 @@
       "recipe_id": 2,
       "ingredient_id": 17,
       "quantity": "1 cup",
-      "calories_per_quantity": 64,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -418,7 +422,6 @@
       "recipe_id": 2,
       "ingredient_id": 19,
       "quantity": "1 cup",
-      "calories_per_quantity": 52,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -427,7 +430,6 @@
       "recipe_id": 2,
       "ingredient_id": 22,
       "quantity": "1 cup",
-      "calories_per_quantity": 55,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -436,7 +438,6 @@
       "recipe_id": 2,
       "ingredient_id": 28,
       "quantity": "1 cup",
-      "calories_per_quantity": 206,
       "ingredient_type_id": 4,
       "cooking_method_id": 1
     },
@@ -445,7 +446,6 @@
       "recipe_id": 2,
       "ingredient_id": 44,
       "quantity": "2 tablespoons",
-      "calories_per_quantity": 8,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -454,7 +454,6 @@
       "recipe_id": 3,
       "ingredient_id": 17,
       "quantity": "1 cup",
-      "calories_per_quantity": 64,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -463,7 +462,6 @@
       "recipe_id": 3,
       "ingredient_id": 16,
       "quantity": "3 cloves",
-      "calories_per_quantity": 13,
       "ingredient_type_id": 5,
       "cooking_method_id": 4
     },
@@ -472,7 +470,6 @@
       "recipe_id": 3,
       "ingredient_id": 20,
       "quantity": "1/2 cup",
-      "calories_per_quantity": 10,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -481,7 +478,6 @@
       "recipe_id": 3,
       "ingredient_id": 19,
       "quantity": "1 cup",
-      "calories_per_quantity": 52,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -490,7 +486,6 @@
       "recipe_id": 3,
       "ingredient_id": 21,
       "quantity": "1 cup",
-      "calories_per_quantity": 45,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -499,7 +494,6 @@
       "recipe_id": 3,
       "ingredient_id": 26,
       "quantity": "1 cup",
-      "calories_per_quantity": 20,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -508,7 +502,6 @@
       "recipe_id": 3,
       "ingredient_id": 6,
       "quantity": "1 cup",
-      "calories_per_quantity": 230,
       "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
@@ -517,7 +510,6 @@
       "recipe_id": 3,
       "ingredient_id": 18,
       "quantity": "1 cup (diced)",
-      "calories_per_quantity": 32,
       "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
@@ -526,7 +518,6 @@
       "recipe_id": 3,
       "ingredient_id": 37,
       "quantity": "1 tsp",
-      "calories_per_quantity": 8,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -535,7 +526,6 @@
       "recipe_id": 3,
       "ingredient_id": 38,
       "quantity": "1 tsp",
-      "calories_per_quantity": 5,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -544,7 +534,6 @@
       "recipe_id": 3,
       "ingredient_id": 35,
       "quantity": "1 tsp",
-      "calories_per_quantity": 0,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -553,7 +542,6 @@
       "recipe_id": 3,
       "ingredient_id": 36,
       "quantity": "1/2 tsp",
-      "calories_per_quantity": 3,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -562,7 +550,6 @@
       "recipe_id": 4,
       "ingredient_id": 29,
       "quantity": "1 cup",
-      "calories_per_quantity": 222,
       "ingredient_type_id": 4,
       "cooking_method_id": 1
     },
@@ -571,7 +558,6 @@
       "recipe_id": 4,
       "ingredient_id": 4,
       "quantity": "1 cup",
-      "calories_per_quantity": 190,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -580,7 +566,6 @@
       "recipe_id": 4,
       "ingredient_id": 25,
       "quantity": "1 cup",
-      "calories_per_quantity": 7,
       "ingredient_type_id": 1,
       "cooking_method_id": 5
     },
@@ -589,7 +574,6 @@
       "recipe_id": 4,
       "ingredient_id": 18,
       "quantity": "1/2 cup (cherry tomatoes)",
-      "calories_per_quantity": 15,
       "ingredient_type_id": 1,
       "cooking_method_id": 5
     },
@@ -598,7 +582,6 @@
       "recipe_id": 4,
       "ingredient_id": 14,
       "quantity": "2 tbsp",
-      "calories_per_quantity": 239,
       "ingredient_type_id": 6,
       "cooking_method_id": 5
     },
@@ -607,7 +590,6 @@
       "recipe_id": 4,
       "ingredient_id": 43,
       "quantity": "1 tbsp",
-      "calories_per_quantity": 4,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -616,7 +598,6 @@
       "recipe_id": 4,
       "ingredient_id": 35,
       "quantity": "1/2 tsp",
-      "calories_per_quantity": 0,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -625,7 +606,6 @@
       "recipe_id": 4,
       "ingredient_id": 36,
       "quantity": "1/2 tsp",
-      "calories_per_quantity": 3,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -634,7 +614,6 @@
       "recipe_id": 5,
       "ingredient_id": 3,
       "quantity": "2 fillets",
-      "calories_per_quantity": 412,
       "ingredient_type_id": 2,
       "cooking_method_id": 4
     },
@@ -643,7 +622,6 @@
       "recipe_id": 5,
       "ingredient_id": 35,
       "quantity": "1/2 tsp",
-      "calories_per_quantity": 0,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -652,7 +630,6 @@
       "recipe_id": 5,
       "ingredient_id": 36,
       "quantity": "1/2 tsp",
-      "calories_per_quantity": 3,
       "ingredient_type_id": 5,
       "cooking_method_id": 5
     },
@@ -661,7 +638,6 @@
       "recipe_id": 5,
       "ingredient_id": 14,
       "quantity": "1 tbsp",
-      "calories_per_quantity": 119,
       "ingredient_type_id": 6,
       "cooking_method_id": 4
     },
@@ -670,7 +646,6 @@
       "recipe_id": 5,
       "ingredient_id": 16,
       "quantity": "2 cloves",
-      "calories_per_quantity": 9,
       "ingredient_type_id": 5,
       "cooking_method_id": 4
     },
@@ -679,7 +654,6 @@
       "recipe_id": 5,
       "ingredient_id": 11,
       "quantity": "1/4 cup",
-      "calories_per_quantity": 103,
       "ingredient_type_id": 3,
       "cooking_method_id": 5
     },
@@ -688,7 +662,6 @@
       "recipe_id": 5,
       "ingredient_id": 13,
       "quantity": "2 tbsp",
-      "calories_per_quantity": 42,
       "ingredient_type_id": 3,
       "cooking_method_id": 5
     },
@@ -697,7 +670,6 @@
       "recipe_id": 5,
       "ingredient_id": 25,
       "quantity": "1 cup",
-      "calories_per_quantity": 7,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -706,7 +678,6 @@
       "recipe_id": 6,
       "ingredient_id": 11,
       "quantity": "1 cup",
-      "calories_per_quantity": 180,
       "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
@@ -715,7 +686,6 @@
       "recipe_id": 6,
       "ingredient_id": 22,
       "quantity": "2 tbsp",
-      "calories_per_quantity": 100,
       "ingredient_type_id": 2,
       "cooking_method_id": 5
     },
@@ -724,7 +694,6 @@
       "recipe_id": 6,
       "ingredient_id": 28,
       "quantity": "1 piece",
-      "calories_per_quantity": 20,
       "ingredient_type_id": 3,
       "cooking_method_id": 2
     },
@@ -733,7 +702,6 @@
       "recipe_id": 7,
       "ingredient_id": 14,
       "quantity": "2 slices",
-      "calories_per_quantity": 100,
       "ingredient_type_id": 1,
       "cooking_method_id": 6
     },
@@ -742,7 +710,6 @@
       "recipe_id": 7,
       "ingredient_id": 31,
       "quantity": "0.5 cup",
-      "calories_per_quantity": 80,
       "ingredient_type_id": 2,
       "cooking_method_id": 3
     },
@@ -751,7 +718,6 @@
       "recipe_id": 8,
       "ingredient_id": 9,
       "quantity": "1 cup",
-      "calories_per_quantity": 160,
       "ingredient_type_id": 4,
       "cooking_method_id": 1
     },
@@ -760,7 +726,6 @@
       "recipe_id": 8,
       "ingredient_id": 17,
       "quantity": "0.5 cup",
-      "calories_per_quantity": 100,
       "ingredient_type_id": 5,
       "cooking_method_id": 1
     },
@@ -769,7 +734,6 @@
       "recipe_id": 9,
       "ingredient_id": 6,
       "quantity": "1 zucchini",
-      "calories_per_quantity": 25,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -778,7 +742,6 @@
       "recipe_id": 9,
       "ingredient_id": 47,
       "quantity": "2 tbsp",
-      "calories_per_quantity": 120,
       "ingredient_type_id": 2,
       "cooking_method_id": 5
     },
@@ -787,7 +750,6 @@
       "recipe_id": 10,
       "ingredient_id": 2,
       "quantity": "2 bananas",
-      "calories_per_quantity": 200,
       "ingredient_type_id": 1,
       "cooking_method_id": 2
     },
@@ -796,7 +758,6 @@
       "recipe_id": 10,
       "ingredient_id": 39,
       "quantity": "1 cup oats",
-      "calories_per_quantity": 150,
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
@@ -805,7 +766,6 @@
       "recipe_id": 11,
       "ingredient_id": 14,
       "quantity": "1 cup",
-      "calories_per_quantity": 80,
       "ingredient_type_id": 1,
       "cooking_method_id": 2
     },
@@ -814,7 +774,6 @@
       "recipe_id": 11,
       "ingredient_id": 20,
       "quantity": "0.5 cup",
-      "calories_per_quantity": 90,
       "ingredient_type_id": 3,
       "cooking_method_id": 1
     },
@@ -823,7 +782,6 @@
       "recipe_id": 12,
       "ingredient_id": 40,
       "quantity": "0.5 cup",
-      "calories_per_quantity": 70,
       "ingredient_type_id": 5,
       "cooking_method_id": 6
     },
@@ -832,7 +790,6 @@
       "recipe_id": 12,
       "ingredient_id": 44,
       "quantity": "1 cup",
-      "calories_per_quantity": 100,
       "ingredient_type_id": 3,
       "cooking_method_id": 4
     },
@@ -841,7 +798,6 @@
       "recipe_id": 13,
       "ingredient_id": 5,
       "quantity": "2 ears",
-      "calories_per_quantity": 180,
       "ingredient_type_id": 1,
       "cooking_method_id": 2
     },
@@ -850,7 +806,6 @@
       "recipe_id": 13,
       "ingredient_id": 24,
       "quantity": "1 tbsp",
-      "calories_per_quantity": 90,
       "ingredient_type_id": 2,
       "cooking_method_id": 1
     },
@@ -859,7 +814,6 @@
       "recipe_id": 14,
       "ingredient_id": 32,
       "quantity": "1 cup",
-      "calories_per_quantity": 140,
       "ingredient_type_id": 4,
       "cooking_method_id": 1
     },
@@ -868,7 +822,6 @@
       "recipe_id": 14,
       "ingredient_id": 23,
       "quantity": "1 tsp",
-      "calories_per_quantity": 10,
       "ingredient_type_id": 3,
       "cooking_method_id": 3
     },
@@ -877,7 +830,6 @@
       "recipe_id": 15,
       "ingredient_id": 12,
       "quantity": "1 cup flour",
-      "calories_per_quantity": 120,
       "ingredient_type_id": 4,
       "cooking_method_id": 5
     },
@@ -886,7 +838,6 @@
       "recipe_id": 15,
       "ingredient_id": 1,
       "quantity": "5 strawberries",
-      "calories_per_quantity": 50,
       "ingredient_type_id": 1,
       "cooking_method_id": 2
     },
@@ -895,7 +846,6 @@
       "recipe_id": 16,
       "ingredient_id": 29,
       "quantity": "1 cup rice",
-      "calories_per_quantity": 200,
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
@@ -904,7 +854,6 @@
       "recipe_id": 16,
       "ingredient_id": 45,
       "quantity": "1 cup mushrooms",
-      "calories_per_quantity": 80,
       "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
@@ -913,7 +862,6 @@
       "recipe_id": 17,
       "ingredient_id": 29,
       "quantity": "1 cup rice",
-      "calories_per_quantity": 200,
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
@@ -922,7 +870,6 @@
       "recipe_id": 17,
       "ingredient_id": 36,
       "quantity": "1 tbsp soy sauce",
-      "calories_per_quantity": 15,
       "ingredient_type_id": 2,
       "cooking_method_id": 6
     },
@@ -931,7 +878,6 @@
       "recipe_id": 18,
       "ingredient_id": 13,
       "quantity": "2 avocados",
-      "calories_per_quantity": 320,
       "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
@@ -940,7 +886,6 @@
       "recipe_id": 18,
       "ingredient_id": 7,
       "quantity": "1 tbsp lime juice",
-      "calories_per_quantity": 10,
       "ingredient_type_id": 3,
       "cooking_method_id": 1
     },
@@ -949,7 +894,6 @@
       "recipe_id": 19,
       "ingredient_id": 29,
       "quantity": "1.5 cups basmati rice",
-      "calories_per_quantity": 300,
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
@@ -958,7 +902,6 @@
       "recipe_id": 19,
       "ingredient_id": 20,
       "quantity": "1 cup mixed vegetables",
-      "calories_per_quantity": 150,
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
@@ -967,7 +910,6 @@
       "recipe_id": 20,
       "ingredient_id": 30,
       "quantity": "2 onions",
-      "calories_per_quantity": 120,
       "ingredient_type_id": 1,
       "cooking_method_id": 2
     },
@@ -976,9 +918,64 @@
       "recipe_id": 20,
       "ingredient_id": 41,
       "quantity": "1 cup beef broth",
-      "calories_per_quantity": 100,
       "ingredient_type_id": 5,
       "cooking_method_id": 1
+    },
+    {
+      "recipe_ingredient_id": 73,
+      "recipe_id": 21,
+      "ingredient_id": 1,
+      "quantity": "500g chicken breast",
+      "ingredient_type_id": 2,
+      "cooking_method_id": 1
+    },
+    {
+      "recipe_ingredient_id": 74,
+      "recipe_id": 21,
+      "ingredient_id": 28,
+      "quantity": "2 cups rice",
+      "ingredient_type_id": 4,
+      "cooking_method_id": 1
+    },
+    {
+      "recipe_ingredient_id": 75,
+      "recipe_id": 21,
+      "ingredient_id": 9,
+      "quantity": "2 tbsp ghee or butter",
+      "ingredient_type_id": 6,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 76,
+      "recipe_id": 21,
+      "ingredient_id": 39,
+      "quantity": "1 tsp cinnamon",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 77,
+      "recipe_id": 21,
+      "ingredient_id": 35,
+      "quantity": "1 tsp salt",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 78,
+      "recipe_id": 21,
+      "ingredient_id": 36,
+      "quantity": "1/2 tsp black pepper",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 79,
+      "recipe_id": 21,
+      "ingredient_id": 48,
+      "quantity": "1/4 cup almonds, fried",
+      "ingredient_type_id": 4,
+      "cooking_method_id": 4
     }
   ]
 }

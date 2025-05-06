@@ -60,7 +60,6 @@ app.get('/api/recipes/:id/ingredients', async (req, res) => {
         i.ingredient_id,
         i.ingredient_name,
         ri.quantity,
-        ri.calories_per_quantity,
         it.ingredient_type_id,
         it.ingredient_type_name,
         cm.cooking_method_id,
@@ -75,6 +74,101 @@ app.get('/api/recipes/:id/ingredients', async (req, res) => {
     res.json(result.rows);
   } catch (error) {
     console.error(error);
+    res.status(500).send('Server Error');
+  }
+});
+
+app.post('/api/recipes/filter', async (req, res) => {
+  const { categoryId, recipeTypeId, cuisineId, maxCalories } = req.body;
+  console.log('Received filters:', req.body);
+  let query = `
+    SELECT 
+      r.recipe_id,
+      r.recipe_name,
+      r.recipe_steps,
+      r.image,
+      r.preparation_time,
+      r.total_calories,
+      r.servings,
+      r.category_id,
+      c.category_name,
+      r.cuisine_id,
+      cu.cuisine_name,
+      r.recipe_type_id,
+      rt.recipe_type_name
+    FROM recipe r
+    JOIN category c ON r.category_id = c.category_id
+    JOIN cuisine cu ON r.cuisine_id = cu.cuisine_id
+    JOIN recipe_type rt ON r.recipe_type_id = rt.recipe_type_id
+    WHERE 1=1
+  `;
+
+  const values = [];
+  let count = 1;
+
+  if (categoryId) {
+    query += ` AND r.category_id = $${count++}`;
+    values.push(categoryId);
+  }
+
+  if (recipeTypeId) {
+    query += ` AND r.recipe_type_id = $${count++}`;
+    values.push(recipeTypeId);
+  }
+
+  if (cuisineId) {
+    query += ` AND r.cuisine_id = $${count++}`;
+    values.push(cuisineId);
+  }
+
+  if (maxCalories) {
+    query += ` AND r.total_calories <= $${count++}`;
+    values.push(maxCalories);
+  }
+
+  try {
+    const result = await pool.query(query, values);
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Server Error');
+  }
+});
+
+
+/** GET RANDOM RECIPE */
+app.get('/api/recipes/random', async (req, res) => {
+  try {
+    const result = await pool.query(`
+      SELECT 
+        r.recipe_id,
+        r.recipe_name,
+        r.recipe_steps,
+        r.image,
+        r.preparation_time,
+        r.total_calories,
+        r.servings,
+        r.category_id,
+        c.category_name,
+        r.cuisine_id,
+        cu.cuisine_name,
+        r.recipe_type_id,
+        rt.recipe_type_name
+      FROM recipe r
+      JOIN category c ON r.category_id = c.category_id
+      JOIN cuisine cu ON r.cuisine_id = cu.cuisine_id
+      JOIN recipe_type rt ON r.recipe_type_id = rt.recipe_type_id
+      ORDER BY RANDOM()
+      LIMIT 1
+    `);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'No recipes found.' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
     res.status(500).send('Server Error');
   }
 });

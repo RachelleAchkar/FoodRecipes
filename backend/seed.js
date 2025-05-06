@@ -74,7 +74,6 @@ async function seedDatabase() {
       CREATE TABLE recipe_ingredients (
         recipe_ingredient_id SERIAL PRIMARY KEY,
         quantity VARCHAR(255),
-        calories_per_quantity INT,
         recipe_id INT REFERENCES recipe(recipe_id) ON DELETE CASCADE,
         ingredient_id INT REFERENCES ingredients(ingredient_id) ON DELETE CASCADE,
         ingredient_type_id INT REFERENCES ingredient_type(ingredient_type_id) ON DELETE CASCADE,
@@ -85,7 +84,7 @@ async function seedDatabase() {
     console.log("Database tables created successfully.");
 
     // Read the seed data from the JSON file
-    const data = await fs.readFile('seedData.json', 'utf-8');
+    const data = await fs.readFile('../flutter_app/assets/seedData.json', 'utf-8');
     const seedData = JSON.parse(data);
 
     // Insert categories
@@ -158,12 +157,11 @@ async function seedDatabase() {
         console.log(`Inserting ingredient with cooking_method_id: ${ingredient.cooking_method_id}`);
         await pool.query(
           `INSERT INTO recipe_ingredients (
-            quantity, calories_per_quantity, recipe_id,
+            quantity, recipe_id,
             ingredient_id, ingredient_type_id, cooking_method_id
-          ) VALUES ($1, $2, $3, $4, $5, $6)`,
+          ) VALUES ($1, $2, $3, $4, $5)`,
           [
             ingredient.quantity,
-            ingredient.calories_per_quantity,
             recipeId,
             ingredient.ingredient_id,
             ingredient.ingredient_type_id,
