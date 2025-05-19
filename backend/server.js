@@ -10,7 +10,7 @@ const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
   database: 'foodrecipes',
-  password: 'admin',
+  password: 'vanessa123',
   port: 5432,
 });
 
@@ -25,7 +25,6 @@ app.get('/api/recipes', async (req, res) => {
         r.recipe_id,
         r.recipe_name,
         r.recipe_steps,
-        r.image,
         r.preparation_time,
         r.total_calories,
         r.servings,
@@ -79,14 +78,22 @@ app.get('/api/recipes/:id/ingredients', async (req, res) => {
 });
 
 app.post('/api/recipes/filter', async (req, res) => {
-  const { categoryId, recipeTypeId, cuisineId, maxCalories } = req.body;
+  const {
+    categoryId,
+    recipeTypeId,
+    cuisineId,
+    maxCalories,
+    ingredientIds,           // 🆕 List of selected ingredient IDs
+    matchAllIngredients = false // 🆕 Optional flag for strict vs loose filtering
+  } = req.body;
+
   console.log('Received filters:', req.body);
+
   let query = `
     SELECT 
       r.recipe_id,
       r.recipe_name,
       r.recipe_steps,
-      r.image,
       r.preparation_time,
       r.total_calories,
       r.servings,
@@ -126,6 +133,34 @@ app.post('/api/recipes/filter', async (req, res) => {
     values.push(maxCalories);
   }
 
+  // 🆕 Ingredient filtering logic
+  if (ingredientIds && ingredientIds.length > 0) {
+    if (matchAllIngredients) {
+      // Must match ALL selected ingredients
+      query += `
+        AND r.recipe_id IN (
+          SELECT recipe_id
+          FROM recipe_ingredients
+          WHERE ingredient_id = ANY($${count++})
+          GROUP BY recipe_id
+          HAVING COUNT(DISTINCT ingredient_id) = $${count++}
+        )
+      `;
+      values.push(ingredientIds);
+      values.push(ingredientIds.length);
+    } else {
+      // Match ANY selected ingredient
+      query += `
+        AND r.recipe_id IN (
+          SELECT DISTINCT recipe_id
+          FROM recipe_ingredients
+          WHERE ingredient_id = ANY($${count++})
+        )
+      `;
+      values.push(ingredientIds);
+    }
+  }
+
   try {
     const result = await pool.query(query, values);
     res.json(result.rows);
@@ -136,6 +171,7 @@ app.post('/api/recipes/filter', async (req, res) => {
 });
 
 
+
 /** GET RANDOM RECIPE */
 app.get('/api/recipes/random', async (req, res) => {
   try {
@@ -144,7 +180,6 @@ app.get('/api/recipes/random', async (req, res) => {
         r.recipe_id,
         r.recipe_name,
         r.recipe_steps,
-        r.image,
         r.preparation_time,
         r.total_calories,
         r.servings,

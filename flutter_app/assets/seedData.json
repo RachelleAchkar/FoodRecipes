@@ -1,33 +1,33 @@
 {
   "category": [
-    {"category_id": 1,"category_name": "Appetizer"},
-    {"category_id": 2,"category_name": "Main Course"},
-    {"category_id": 3,"category_name": "Dessert"},
-    {"category_id": 4,"category_name": "Snack"},
-    {"category_id": 5,"category_name": "Salad"}
+    {"category_id": 1, "category_name": "Appetizer"},
+    {"category_id": 2, "category_name": "Main Course"},
+    {"category_id": 3, "category_name": "Dessert"},
+    {"category_id": 4, "category_name": "Snack"},
+    {"category_id": 5, "category_name": "Salad"}
   ],
   "cuisine": [
-    {"cuisine_id": 1,"cuisine_name": "Italian"},
-    {"cuisine_id": 2,"cuisine_name": "Mexican"},
-    {"cuisine_id": 3,"cuisine_name": "Indian"},
-    {"cuisine_id": 4,"cuisine_name": "Chinese"},
-    {"cuisine_id": 5,"cuisine_name": "French"},
-    {"cuisine_id": 6,"cuisine_name": "Lebanese"}
+    {"cuisine_id": 1, "cuisine_name": "Italian"},
+    {"cuisine_id": 2, "cuisine_name": "Mexican"},
+    {"cuisine_id": 3, "cuisine_name": "Indian"},
+    {"cuisine_id": 4, "cuisine_name": "Chinese"},
+    {"cuisine_id": 5, "cuisine_name": "French"},
+    {"cuisine_id": 6, "cuisine_name": "Lebanese"}
   ],
   "recipe_type": [
-    {"recipe_type_id": 1,"recipe_type_name": "Vegetarian"},
-    {"recipe_type_id": 2,"recipe_type_name": "Non-Vegetarian"},
-    {"recipe_type_id": 3,"recipe_type_name": "Vegan"},
-    {"recipe_type_id": 4,"recipe_type_name": "Gluten-Free"},
-    {"recipe_type_id": 5,"recipe_type_name": "Keto"}
+    {"recipe_type_id": 1, "recipe_type_name": "Vegetarian"},
+    {"recipe_type_id": 2, "recipe_type_name": "Non-Vegetarian"},
+    {"recipe_type_id": 3, "recipe_type_name": "Vegan"},
+    {"recipe_type_id": 4, "recipe_type_name": "Gluten-Free"},
+    {"recipe_type_id": 5, "recipe_type_name": "Keto"}
   ],
   "cooking_method": [
-    {"cooking_method_id": 1,"cooking_method_name": "Boiling"},
-    {"cooking_method_id": 2,"cooking_method_name": "Grilling"},
-    {"cooking_method_id": 3,"cooking_method_name": "Baking"},
-    {"cooking_method_id": 4,"cooking_method_name": "Frying"},
-    {"cooking_method_id": 5,"cooking_method_name": "Steaming"},
-    {"cooking_method_id": 6, "cooking_method_name": "None" }
+    {"cooking_method_id": 1, "cooking_method_name": "Boiling"},
+    {"cooking_method_id": 2, "cooking_method_name": "Grilling"},
+    {"cooking_method_id": 3, "cooking_method_name": "Baking"},
+    {"cooking_method_id": 4, "cooking_method_name": "Frying"},
+    {"cooking_method_id": 5, "cooking_method_name": "Steaming"},
+    {"cooking_method_id": 6, "cooking_method_name": "None"}
   ],
   "ingredient_types": [
     { "ingredient_type_id": 1, "ingredient_type_name": "Vegetable / Plant-based Protein" },
@@ -88,14 +88,20 @@
     { "ingredient_id": 47, "ingredient_name": "Strawberries" },
     { "ingredient_id": 48, "ingredient_name": "Almonds" },
     { "ingredient_id": 49, "ingredient_name": "Walnuts" },
-    { "ingredient_id": 50, "ingredient_name": "Maple Syrup" }
+    { "ingredient_id": 50, "ingredient_name": "Maple Syrup" },
+    { "ingredient_id": 51, "ingredient_name": "Fresh Basil" },
+    { "ingredient_id": 52, "ingredient_name": "Pine Nuts" },
+    { "ingredient_id": 53, "ingredient_name": "Parmesan Cheese (for pesto)" },
+    { "ingredient_id": 54, "ingredient_name": "Black Beans" },
+    { "ingredient_id": 55, "ingredient_name": "Corn" },
+    { "ingredient_id": 56, "ingredient_name": "Red Onion" },
+    { "ingredient_id": 57, "ingredient_name": "Avocado" }
   ],
   "recipe": [
     {
       "recipe_id": 1,
       "recipe_name": "Mediterranean Grilled Chicken Bowl",
       "recipe_steps": "Begin by marinating the chicken breast in olive oil, lemon juice, minced garlic, and a blend of Mediterranean herbs. Grill the chicken until it's fully cooked and has a nice char. While the chicken is grilling, cook the quinoa until fluffy. Sauté chopped bell peppers, zucchini, and spinach in olive oil until tender. Assemble the bowl by placing a bed of quinoa, topping it with the grilled chicken slices, sautéed vegetables, and a dollop of yogurt. Sprinkle with chopped almonds and a drizzle of olive oil for added flavor",
-      "image": "mediterranean_grilled_chicken_bowl.jpg",
       "preparation_time": 45,
       "total_calories": 600,
       "servings": 2,
@@ -107,7 +113,6 @@
       "recipe_id": 2,
       "recipe_name": "Spicy Beef and Vegetable Stir-Fry",
       "recipe_steps": "Start by slicing the ground beef into thin strips and marinate with soy sauce, minced ginger, and a pinch of black pepper. In a wok, heat vegetable oil and stir-fry chopped onions, carrots, and broccoli until they begin to soften. Add the marinated beef to the wok and cook until browned. Stir in cooked rice and mix thoroughly. Finish by adding a splash of lime juice and garnish with chopped coriander",
-      "image": "spicy_beef_vegetable_stirfry.jpg",
       "preparation_time": 30,
       "total_calories": 700,
       "servings": 3,
@@ -119,7 +124,6 @@
       "recipe_id": 3,
       "recipe_name": "Vegan Lentil and Vegetable Stew",
       "recipe_steps": "In a large pot, sauté chopped onions, garlic, and celery in olive oil until translucent. Add diced carrots, bell peppers, and mushrooms, cooking until they start to soften. Stir in lentils, diced tomatoes, and vegetable broth. Season with cumin, coriander, salt, and black pepper. Let the stew simmer until the lentils are tender. Serve hot, garnished with fresh parsley",
-      "image": "vegan_lentil_vegetable_stew.jpg",
       "preparation_time": 60,
       "total_calories": 500,
       "servings": 4,
@@ -131,7 +135,6 @@
       "recipe_id": 4,
       "recipe_name": "Gluten-Free Quinoa Salad with Tofu",
       "recipe_steps": "Cook quinoa until fluffy and let it cool. In a pan, sauté cubed tofu until golden brown. In a large bowl, combine the cooked quinoa, sautéed tofu, chopped cucumbers, cherry tomatoes, and spinach. Prepare a dressing by mixing olive oil, lemon juice, salt, and black pepper. Drizzle the dressing over the salad and toss to combine. Serve chilled",
-      "image": "glutenfree_quinoa_tofu_salad.jpg",
       "preparation_time": 35,
       "total_calories": 450,
       "servings": 2,
@@ -143,7 +146,6 @@
       "recipe_id": 5,
       "recipe_name": "Keto Salmon with Creamy Spinach",
       "recipe_steps": "Season salmon fillets with salt and black pepper. In a skillet, heat olive oil and sear the salmon until cooked through. Remove the salmon and in the same skillet, sauté minced garlic until fragrant. Add heavy cream and grated parmesan cheese, stirring until the sauce thickens. Add fresh spinach and cook until wilted. Return the salmon to the skillet, spooning the creamy spinach over the top. Serve hot",
-      "image": "keto_salmon_creamy_spinach.jpg",
       "preparation_time": 25,
       "total_calories": 550,
       "servings": 2,
@@ -155,7 +157,6 @@
       "recipe_id": 6,
       "recipe_name": "Spicy Chickpea Tacos with Indian Twist",
       "recipe_steps": "Soak chickpeas overnight. Cook until tender. In a pan, heat oil, add chopped onions, tomatoes, and green chilies. Add boiled chickpeas, turmeric, red chili powder, coriander powder, and chana masala. Cook until spices blend well. Warm taco shells and fill with the chickpea mixture. Garnish with chopped coriander leaves",
-      "image": "spicy_chickpea_tacos.jpg",
       "preparation_time": 30,
       "total_calories": 400,
       "servings": 4,
@@ -165,9 +166,8 @@
     },
     {
       "recipe_id": 7,
-      "recipe_name": "Grilled Eggplant Parmesan",
+      "recipe_name": "Mozzarella Eggplant Bake",
       "recipe_steps": "Slice eggplant and grill until tender. Layer grilled eggplant slices with marinara sauce and mozzarella cheese in a baking dish. Bake until cheese melts. Garnish with fresh basil",
-      "image": "grilled_eggplant_parmesan.jpg",
       "preparation_time": 45,
       "total_calories": 500,
       "servings": 2,
@@ -179,7 +179,6 @@
       "recipe_id": 8,
       "recipe_name": "Vegan Quinoa and Black Bean Salad",
       "recipe_steps": "Cook quinoa until fluffy. In a bowl, mix cooked quinoa, black beans, chopped bell peppers, corn, and red onions. Dress with olive oil, lime juice, salt, and pepper. Serve chilled",
-      "image": "vegan_quinoa_black_bean_salad.jpg",
       "preparation_time": 25,
       "total_calories": 350,
       "servings": 3,
@@ -191,7 +190,6 @@
       "recipe_id": 9,
       "recipe_name": "Keto Zucchini Noodles with Pesto",
       "recipe_steps": "Spiralize zucchini into noodles. In a pan, sauté zucchini noodles in olive oil for 2 minutes. Toss with homemade pesto sauce. Serve immediately",
-      "image": "keto_zucchini_pesto.jpg",
       "preparation_time": 20,
       "total_calories": 300,
       "servings": 2,
@@ -203,7 +201,6 @@
       "recipe_id": 10,
       "recipe_name": "Gluten-Free Banana Oat Pancakes",
       "recipe_steps": "Mash bananas in a bowl. Add oats, eggs, and a pinch of cinnamon. Mix well. Heat a non-stick pan and pour batter to form pancakes. Cook until golden brown on both sides. Serve with maple syrup",
-      "image": "gluten_free_banana_pancakes.jpg",
       "preparation_time": 30,
       "total_calories": 400,
       "servings": 4,
@@ -215,7 +212,6 @@
       "recipe_id": 11,
       "recipe_name": "French Ratatouille",
       "recipe_steps": "Slice eggplant, zucchini, bell peppers, and tomatoes. In a pan, sauté onions and garlic in olive oil. Add sliced vegetables, herbs, salt, and pepper. Simmer until vegetables are tender. Serve hot",
-      "image": "french_ratatouille.jpg",
       "preparation_time": 50,
       "total_calories": 250,
       "servings": 3,
@@ -227,7 +223,6 @@
       "recipe_id": 12,
       "recipe_name": "Chinese Steamed Dumplings",
       "recipe_steps": "Prepare dumpling filling with minced vegetables and tofu. Place filling in dumpling wrappers and seal. Steam dumplings until cooked through. Serve with soy sauce",
-      "image": "chinese_steamed_dumplings.jpg",
       "preparation_time": 60,
       "total_calories": 300,
       "servings": 4,
@@ -237,9 +232,8 @@
     },
     {
       "recipe_id": 13,
-      "recipe_name": "Mexican Grilled Corn (Elote)",
+      "recipe_name": "Mexican Grilled Corn",
       "recipe_steps": "Grill corn on the cob until charred. Spread with mayonnaise, sprinkle with chili powder, grated cheese, and lime juice. Serve hot",
-      "image": "mexican_grilled_corn.jpg",
       "preparation_time": 20,
       "total_calories": 200,
       "servings": 4,
@@ -251,7 +245,6 @@
       "recipe_id": 14,
       "recipe_name": "Indian Lentil Soup (Dal)",
       "recipe_steps": "Cook lentils with turmeric and water until soft. In a pan, heat oil, add cumin seeds, chopped onions, garlic, and tomatoes. Combine with cooked lentils. Simmer and serve hot with rice",
-      "image": "indian_dal.jpg",
       "preparation_time": 40,
       "total_calories": 350,
       "servings": 4,
@@ -262,10 +255,9 @@
     {
       "recipe_id": 15,
       "recipe_name": "French Crepes with Strawberries",
-      "recipe_steps": "Prepare crepe batter with flour, eggs, milk, and a pinch of salt. Cook thin crepes on a non-stick pan. Fill with sliced strawberries and a drizzle of maple syrup. Fold and serve",
-      "image": "french_crepes_strawberries.jpg",
+      "recipe_steps": "Prepare crepe batter with flour, eggs, milk, and a pinch of salt. Whisk until smooth and let rest for 15 minutes. Cook thin crepes on a buttered non-stick pan. Fill with sliced strawberries and a drizzle of maple syrup. Fold and serve warm",
       "preparation_time": 35,
-      "total_calories": 400,
+      "total_calories": 450,
       "servings": 4,
       "category_id": 3,
       "cuisine_id": 5,
@@ -275,7 +267,6 @@
       "recipe_id": 16,
       "recipe_name": "Italian Mushroom Risotto",
       "recipe_steps": "Sauté chopped onions and garlic in olive oil. Add arborio rice and cook until translucent. Gradually add vegetable broth, stirring continuously. Add sliced mushrooms and cook until rice is creamy. Finish with grated parmesan cheese",
-      "image": "italian_mushroom_risotto.jpg",
       "preparation_time": 50,
       "total_calories": 550,
       "servings": 3,
@@ -287,7 +278,6 @@
       "recipe_id": 17,
       "recipe_name": "Chinese Fried Rice",
       "recipe_steps": "Cook rice and let it cool. In a wok, heat vegetable oil, add chopped onions, carrots, peas, and scrambled eggs. Add cooked rice and soy sauce. Stir-fry until well combined. Serve hot",
-      "image": "chinese_fried_rice.jpg",
       "preparation_time": 30,
       "total_calories": 600,
       "servings": 4,
@@ -299,7 +289,6 @@
       "recipe_id": 18,
       "recipe_name": "Mexican Guacamole",
       "recipe_steps": "Mash ripe avocados in a bowl. Add chopped onions, tomatoes, cilantro, lime juice, salt, and pepper. Mix well. Serve with tortilla chips",
-      "image": "mexican_guacamole.jpg",
       "preparation_time": 15,
       "total_calories": 250,
       "servings": 2,
@@ -311,7 +300,6 @@
       "recipe_id": 19,
       "recipe_name": "Indian Vegetable Biryani",
       "recipe_steps": "Cook basmati rice until 70% done. In a pan, sauté onions, ginger, garlic, and mixed vegetables with spices. Layer rice and vegetable mixture in a pot. Cook on low heat until rice is fully cooked. Garnish with fried onions",
-      "image": "indian_vegetable_biryani.jpg",
       "preparation_time": 60,
       "total_calories": 700,
       "servings": 4,
@@ -323,7 +311,6 @@
       "recipe_id": 20,
       "recipe_name": "French Onion Soup",
       "recipe_steps": "Sauté sliced onions in butter until caramelized. Add beef broth, thyme, salt, and pepper. Simmer for 30 minutes. Serve hot with toasted bread and melted cheese on top",
-      "image": "french_onion_soup.jpg",
       "preparation_time": 45,
       "total_calories": 400,
       "servings": 3,
@@ -334,8 +321,7 @@
     {
       "recipe_id": 21,
       "recipe_name": "Rez 3a Djej",
-      "recipe_steps": "Boil chicken with spices until cooked. In a separate pot, cook rice with ghee, cinnamon, and chicken broth. Layer rice and shredded chicken. Garnish with fried nuts.",
-      "image": "rez_3a_djej.jpg",
+      "recipe_steps": "Boil chicken with spices until cooked. In a separate pot, cook rice with ghee, cinnamon, and chicken broth. Layer rice and shredded chicken. Garnish with fried nuts",
       "preparation_time": 60,
       "total_calories": 650,
       "servings": 4,
@@ -498,7 +484,7 @@
       "cooking_method_id": 4
     },
     {
-      "recipe_ingredient_id": 20,
+      
       "recipe_id": 3,
       "ingredient_id": 6,
       "quantity": "1 cup",
@@ -676,7 +662,7 @@
     {
       "recipe_ingredient_id": 42,
       "recipe_id": 6,
-      "ingredient_id": 11,
+      "ingredient_id": 5,
       "quantity": "1 cup",
       "ingredient_type_id": 1,
       "cooking_method_id": 1
@@ -684,39 +670,39 @@
     {
       "recipe_ingredient_id": 43,
       "recipe_id": 6,
-      "ingredient_id": 22,
-      "quantity": "2 tbsp",
-      "ingredient_type_id": 2,
-      "cooking_method_id": 5
+      "ingredient_id": 17,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 44,
       "recipe_id": 6,
-      "ingredient_id": 28,
-      "quantity": "1 piece",
-      "ingredient_type_id": 3,
-      "cooking_method_id": 2
+      "ingredient_id": 18,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 45,
       "recipe_id": 7,
-      "ingredient_id": 14,
-      "quantity": "2 slices",
+      "ingredient_id": 24,
+      "quantity": "1 large",
       "ingredient_type_id": 1,
-      "cooking_method_id": 6
+      "cooking_method_id": 2
     },
     {
       "recipe_ingredient_id": 46,
       "recipe_id": 7,
-      "ingredient_id": 31,
-      "quantity": "0.5 cup",
-      "ingredient_type_id": 2,
+      "ingredient_id": 12,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 3,
       "cooking_method_id": 3
     },
     {
       "recipe_ingredient_id": 47,
       "recipe_id": 8,
-      "ingredient_id": 9,
+      "ingredient_id": 29,
       "quantity": "1 cup",
       "ingredient_type_id": 4,
       "cooking_method_id": 1
@@ -724,201 +710,203 @@
     {
       "recipe_ingredient_id": 48,
       "recipe_id": 8,
-      "ingredient_id": 17,
-      "quantity": "0.5 cup",
-      "ingredient_type_id": 5,
+      "ingredient_id": 5,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
     {
       "recipe_ingredient_id": 49,
       "recipe_id": 9,
-      "ingredient_id": 6,
-      "quantity": "1 zucchini",
+      "ingredient_id": 24,
+      "quantity": "2 medium",
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 50,
       "recipe_id": 9,
-      "ingredient_id": 47,
+      "ingredient_id": 14,
       "quantity": "2 tbsp",
-      "ingredient_type_id": 2,
+      "ingredient_type_id": 6,
       "cooking_method_id": 5
     },
     {
       "recipe_ingredient_id": 51,
       "recipe_id": 10,
-      "ingredient_id": 2,
-      "quantity": "2 bananas",
+      "ingredient_id": 46,
+      "quantity": "2",
       "ingredient_type_id": 1,
       "cooking_method_id": 2
     },
     {
       "recipe_ingredient_id": 52,
       "recipe_id": 10,
-      "ingredient_id": 39,
-      "quantity": "1 cup oats",
+      "ingredient_id": 32,
+      "quantity": "1 cup",
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
     {
       "recipe_ingredient_id": 53,
       "recipe_id": 11,
-      "ingredient_id": 14,
-      "quantity": "1 cup",
+      "ingredient_id": 24,
+      "quantity": "1",
       "ingredient_type_id": 1,
-      "cooking_method_id": 2
+      "cooking_method_id": 4
     },
+
     {
       "recipe_ingredient_id": 54,
       "recipe_id": 11,
-      "ingredient_id": 20,
-      "quantity": "0.5 cup",
-      "ingredient_type_id": 3,
-      "cooking_method_id": 1
+      "ingredient_id": 21,
+      "quantity": "1",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 55,
       "recipe_id": 12,
-      "ingredient_id": 40,
-      "quantity": "0.5 cup",
-      "ingredient_type_id": 5,
+      "ingredient_id": 33,
+      "quantity": "1 cup",
+      "ingredient_type_id": 4,
       "cooking_method_id": 6
     },
     {
       "recipe_ingredient_id": 56,
       "recipe_id": 12,
-      "ingredient_id": 44,
-      "quantity": "1 cup",
-      "ingredient_type_id": 3,
+      "ingredient_id": 4,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 57,
       "recipe_id": 13,
-      "ingredient_id": 5,
-      "quantity": "2 ears",
-      "ingredient_type_id": 1,
-      "cooking_method_id": 2
+      "ingredient_id": 35,
+      "quantity": "1 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
     },
     {
       "recipe_ingredient_id": 58,
       "recipe_id": 13,
-      "ingredient_id": 24,
-      "quantity": "1 tbsp",
-      "ingredient_type_id": 2,
-      "cooking_method_id": 1
+      "ingredient_id": 36,
+      "quantity": "1/2 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
     },
+    
     {
       "recipe_ingredient_id": 59,
       "recipe_id": 14,
-      "ingredient_id": 32,
+      "ingredient_id": 6,
       "quantity": "1 cup",
-      "ingredient_type_id": 4,
+      "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
     {
       "recipe_ingredient_id": 60,
       "recipe_id": 14,
-      "ingredient_id": 23,
-      "quantity": "1 tsp",
-      "ingredient_type_id": 3,
-      "cooking_method_id": 3
+      "ingredient_id": 17,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 61,
       "recipe_id": 15,
-      "ingredient_id": 12,
-      "quantity": "1 cup flour",
+      "ingredient_id": 33,
+      "quantity": "1 cup",
       "ingredient_type_id": 4,
       "cooking_method_id": 5
     },
     {
       "recipe_ingredient_id": 62,
       "recipe_id": 15,
-      "ingredient_id": 1,
-      "quantity": "5 strawberries",
-      "ingredient_type_id": 1,
-      "cooking_method_id": 2
+      "ingredient_id": 7,
+      "quantity": "2",
+      "ingredient_type_id": 3,
+      "cooking_method_id": 5
     },
     {
       "recipe_ingredient_id": 63,
       "recipe_id": 16,
-      "ingredient_id": 29,
-      "quantity": "1 cup rice",
+      "ingredient_id": 28,
+      "quantity": "1 cup",
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
     {
       "recipe_ingredient_id": 64,
       "recipe_id": 16,
-      "ingredient_id": 45,
-      "quantity": "1 cup mushrooms",
+      "ingredient_id": 26,
+      "quantity": "1 cup",
       "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
     {
       "recipe_ingredient_id": 65,
       "recipe_id": 17,
-      "ingredient_id": 29,
-      "quantity": "1 cup rice",
+      "ingredient_id": 28,
+      "quantity": "1 cup",
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
     {
       "recipe_ingredient_id": 66,
       "recipe_id": 17,
-      "ingredient_id": 36,
-      "quantity": "1 tbsp soy sauce",
-      "ingredient_type_id": 2,
-      "cooking_method_id": 6
+      "ingredient_id": 7,
+      "quantity": "2",
+      "ingredient_type_id": 3,
+      "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 67,
       "recipe_id": 18,
-      "ingredient_id": 13,
-      "quantity": "2 avocados",
+      "ingredient_id": 57,
+      "quantity": "2",
       "ingredient_type_id": 1,
-      "cooking_method_id": 1
+      "cooking_method_id": 6
     },
     {
       "recipe_ingredient_id": 68,
       "recipe_id": 18,
-      "ingredient_id": 7,
-      "quantity": "1 tbsp lime juice",
-      "ingredient_type_id": 3,
+      "ingredient_id": 17,
+      "quantity": "1/4 cup",
+      "ingredient_type_id": 1,
       "cooking_method_id": 1
     },
     {
       "recipe_ingredient_id": 69,
       "recipe_id": 19,
-      "ingredient_id": 29,
-      "quantity": "1.5 cups basmati rice",
+      "ingredient_id": 28,
+      "quantity": "1.5 cups",
       "ingredient_type_id": 4,
       "cooking_method_id": 3
     },
     {
       "recipe_ingredient_id": 70,
       "recipe_id": 19,
-      "ingredient_id": 20,
-      "quantity": "1 cup mixed vegetables",
+      "ingredient_id": 19,
+      "quantity": "1 cup",
       "ingredient_type_id": 1,
       "cooking_method_id": 4
     },
     {
       "recipe_ingredient_id": 71,
       "recipe_id": 20,
-      "ingredient_id": 30,
-      "quantity": "2 onions",
+      "ingredient_id": 17,
+      "quantity": "2 large",
       "ingredient_type_id": 1,
       "cooking_method_id": 2
     },
     {
       "recipe_ingredient_id": 72,
       "recipe_id": 20,
-      "ingredient_id": 41,
-      "quantity": "1 cup beef broth",
-      "ingredient_type_id": 5,
+      "ingredient_id": 2,
+      "quantity": "4 cups",
+      "ingredient_type_id": 2,
       "cooking_method_id": 1
     },
     {
@@ -976,6 +964,307 @@
       "quantity": "1/4 cup almonds, fried",
       "ingredient_type_id": 4,
       "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 80,
+      "recipe_id": 15,
+      "ingredient_id": 8,
+      "quantity": "1 cup",
+      "ingredient_type_id": 3,
+      "cooking_method_id": 5
+    },
+    {
+      "recipe_ingredient_id": 81,
+      "recipe_id": 15,
+      "ingredient_id": 47,
+      "quantity": "1 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 82,
+      "recipe_id": 15,
+      "ingredient_id": 50,
+      "quantity": "2 tbsp",
+      "ingredient_type_id": 7,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 83,
+      "recipe_id": 15,
+      "ingredient_id": 9,
+      "quantity": "1 tbsp",
+      "ingredient_type_id": 6,
+      "cooking_method_id": 4
+    },
+
+    {
+      "recipe_ingredient_id": 84,
+      "recipe_id": 16,
+      "ingredient_id": 14,
+      "quantity": "2 tbsp",
+      "ingredient_type_id": 6,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 85,
+      "recipe_id": 16,
+      "ingredient_id": 17,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 86,
+      "recipe_id": 16,
+      "ingredient_id": 13,
+      "quantity": "1/4 cup",
+      "ingredient_type_id": 3,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 87,
+      "recipe_id": 16,
+      "ingredient_id": 35,
+      "quantity": "1 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 88,
+      "recipe_id": 17,
+      "ingredient_id": 15,
+      "quantity": "2 tbsp",
+      "ingredient_type_id": 6,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 89,
+      "recipe_id": 17,
+      "ingredient_id": 42,
+      "quantity": "1 tbsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 90,
+      "recipe_id": 17,
+      "ingredient_id": 36,
+      "quantity": "1/2 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 91,
+      "recipe_id": 18,
+      "ingredient_id": 44,
+      "quantity": "1 tbsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 92,
+      "recipe_id": 18,
+      "ingredient_id": 35,
+      "quantity": "1/2 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 93,
+      "recipe_id": 18,
+      "ingredient_id": 18,
+      "quantity": "1/4 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 94,
+      "recipe_id": 19,
+      "ingredient_id": 41,
+      "quantity": "1 tbsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 95,
+      "recipe_id": 19,
+      "ingredient_id": 16,
+      "quantity": "4 cloves",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 96,
+      "recipe_id": 19,
+      "ingredient_id": 37,
+      "quantity": "1 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 97,
+      "recipe_id": 19,
+      "ingredient_id": 14,
+      "quantity": "2 tbsp",
+      "ingredient_type_id": 6,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 98,
+      "recipe_id": 20,
+      "ingredient_id": 12,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 3,
+      "cooking_method_id": 3
+    },
+    {
+      "recipe_ingredient_id": 99,
+      "recipe_id": 20,
+      "ingredient_id": 30,
+      "quantity": "4 slices",
+      "ingredient_type_id": 4,
+      "cooking_method_id": 3
+    },
+    {
+      "recipe_ingredient_id": 100,
+      "recipe_id": 20,
+      "ingredient_id": 39,
+      "quantity": "1/2 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+
+    {
+      "recipe_ingredient_id": 101,
+      "recipe_id": 12,
+      "ingredient_id": 19,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 102,
+      "recipe_id": 12,
+      "ingredient_id": 21,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 103,
+      "recipe_id": 12,
+      "ingredient_id": 42,
+      "quantity": "1 tbsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 104,
+      "recipe_id": 11,
+      "ingredient_id": 14,
+      "quantity": "2 tbsp",
+      "ingredient_type_id": 6,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 105,
+      "recipe_id": 11,
+      "ingredient_id": 38,
+      "quantity": "1 tsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 106,
+      "recipe_id": 11,
+      "ingredient_id": 25,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
+    },
+    {
+      "recipe_ingredient_id": 107,
+      "recipe_id": 9,
+      "ingredient_id": 51,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 108,
+      "recipe_id": 9,
+      "ingredient_id": 52,
+      "quantity": "1/4 cup",
+      "ingredient_type_id": 4,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 109,
+      "recipe_id": 9,
+      "ingredient_id": 53,
+      "quantity": "1/4 cup",
+      "ingredient_type_id": 3,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 110,
+      "recipe_id": 9,
+      "ingredient_id": 16,
+      "quantity": "2 cloves",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 111,
+      "recipe_id": 8,
+      "ingredient_id": 54,
+      "quantity": "1 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 1
+    },
+    {
+      "recipe_ingredient_id": 112,
+      "recipe_id": 8,
+      "ingredient_id": 55,
+      "quantity": "1/2 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 1
+    },
+    {
+      "recipe_ingredient_id": 113,
+      "recipe_id": 8,
+      "ingredient_id": 56,
+      "quantity": "1/4 cup",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 6
+    },
+      {
+      "recipe_ingredient_id": 114,
+      "recipe_id": 11,
+      "ingredient_id": 27,
+      "quantity": "1 medium",
+      "ingredient_type_id": 1,
+      "cooking_method_id": 4
+    },
+        {
+      "recipe_ingredient_id": 115,
+      "recipe_id": 13,
+      "ingredient_id": 44,
+      "quantity": "1 tbsp",
+      "ingredient_type_id": 5,
+      "cooking_method_id": 6
+    },
+    {
+      "recipe_ingredient_id": 116,  
+      "recipe_id": 13,            
+      "ingredient_id": 55,         
+      "quantity": "4 ears",       
+      "ingredient_type_id": 1,      
+      "cooking_method_id": 2      
     }
+
+
   ]
 }
+  

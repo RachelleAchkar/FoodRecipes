@@ -5,7 +5,7 @@ const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
   database: 'foodrecipes',
-  password: 'admin',
+  password: 'vanessa123',
   port: 5432,
 });
 
@@ -60,7 +60,6 @@ async function seedDatabase() {
         recipe_id SERIAL PRIMARY KEY,
         recipe_name VARCHAR(255) NOT NULL,
         recipe_steps TEXT,
-        image TEXT,
         preparation_time INT,
         total_calories INT,
         servings INT,
@@ -112,7 +111,7 @@ async function seedDatabase() {
       await pool.query('INSERT INTO ingredient_type (ingredient_type_name) VALUES ($1)', [type.ingredient_type_name]);
     }
 
-    // Insert ingredients (just the name)
+    // Insert ingredients
     for (const ingredient of seedData.ingredients) {
       await pool.query('INSERT INTO ingredients (ingredient_name) VALUES ($1)', [ingredient.ingredient_name]);
     }
@@ -123,7 +122,6 @@ async function seedDatabase() {
         recipe_id,
         recipe_name,
         recipe_steps,
-        image,
         preparation_time,
         total_calories,
         servings,
@@ -134,11 +132,11 @@ async function seedDatabase() {
 
       const result = await pool.query(
         `INSERT INTO recipe (
-          recipe_name, recipe_steps, image, preparation_time, total_calories, servings,
+          recipe_name, recipe_steps, preparation_time, total_calories, servings,
           category_id, cuisine_id, recipe_type_id
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING recipe_id`,
+        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING recipe_id`,
         [
-          recipe_name, recipe_steps, image, preparation_time, total_calories, servings,
+          recipe_name, recipe_steps, preparation_time, total_calories, servings,
           category_id, cuisine_id, recipe_type_id
         ]
       );
@@ -147,10 +145,9 @@ async function seedDatabase() {
 
       // Insert each recipe_ingredient entry from the recipe_ingredients array
       const recipeIngredients = seedData.recipe_ingredients.filter(
-        (ri) => ri.recipe_id === recipeId
+        (ri) => ri.recipe_id === recipe_id // use original JSON recipe_id
       );
 
-      // Log cooking_method_id values to check for any issues
       console.log('Inserting recipe ingredients for recipe_id:', recipe_id);
 
       for (const ingredient of recipeIngredients) {
@@ -178,6 +175,5 @@ async function seedDatabase() {
     await pool.end();
   }
 }
-
 
 seedDatabase().catch((err) => console.error(err));

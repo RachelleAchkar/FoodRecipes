@@ -56,41 +56,38 @@ class _MainPageState extends State<MainPage> {
     });
   }
 
-void _onItemTapped(int index) {
-  if (index == 0 && _selectedIndex == 0) {
-    _recipeListKey = UniqueKey();
-    _navigateToRecipeList();
-  } else if (index == 1) {
-    _showRandomRecipe();
-  } else {
-    setState(() => _selectedIndex = index);
-  }
-}
-
-void _showRandomRecipe() async {
-  final response = await http.get(Uri.parse('http://localhost:3000/api/recipes/random'));
-
-  if (response.statusCode == 200) {
-    final jsonData = json.decode(response.body);
-    final recipe = Recipe.fromJson(jsonData);
-
-    if (mounted) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => RecipeDetailPage(recipe: recipe),
-        ),
-      );
+  void _onItemTapped(int index) {
+    if (index == 0 && _selectedIndex == 0) {
+      _recipeListKey = UniqueKey();
+      _navigateToRecipeList();
+    } else if (index == 1) {
+      _showRandomRecipe();
+    } else {
+      setState(() => _selectedIndex = index);
     }
-  } else {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Failed to fetch random recipe.')),
-    );
   }
-}
 
+  void _showRandomRecipe() async {
+    final response = await http.get(
+      Uri.parse('http://localhost:3000/api/recipes/random'),
+    );
 
+    if (response.statusCode == 200) {
+      final jsonData = json.decode(response.body);
+      final recipe = Recipe.fromJson(jsonData);
 
+      if (mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => RecipeDetailPage(recipe: recipe)),
+        );
+      }
+    } else {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Failed to fetch random recipe.')));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,10 +98,11 @@ void _showRandomRecipe() async {
           final filters = await Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (_) => FilterPage(
-                currentFilters: _activeFilters,
-                onApply: _applyFilters,
-              ),
+              builder:
+                  (_) => FilterPage(
+                    currentFilters: _activeFilters,
+                    onApply: _applyFilters,
+                  ),
             ),
           );
 
@@ -112,12 +110,8 @@ void _showRandomRecipe() async {
         },
         activeFilters: _activeFilters,
       ),
-      FilterPage(
-        currentFilters: _activeFilters,
-        onApply: _applyFilters,
-      ),
+      FilterPage(currentFilters: _activeFilters, onApply: _applyFilters),
     ];
-
 
     return Scaffold(
       body: pages[_selectedIndex],
@@ -129,13 +123,9 @@ void _showRandomRecipe() async {
             icon: Icon(Icons.restaurant_menu),
             label: 'All Recipes',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shuffle),
-            label: 'Random',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.shuffle), label: 'Random'),
         ],
       ),
     );
   }
 }
-

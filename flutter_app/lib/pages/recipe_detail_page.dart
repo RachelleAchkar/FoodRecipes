@@ -18,7 +18,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   late Future<List<Ingredient>> _ingredientsFuture;
   // Define base URL based on whether app is running on web or mobile
   final String baseUrl =
-      kIsWeb ? 'http://localhost:3000' : 'http://192.168.1.102:3000';
+      kIsWeb ? 'http://localhost:3000' : 'http://192.168.54.2:3000';
 
   @override
   void initState() {
